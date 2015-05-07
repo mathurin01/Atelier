@@ -1,4 +1,5 @@
-jobeet
-======
+Atelier/Jobeet
+==============
 
-A Symfony project created on May 6, 2015, 5:52 pm.
+Reprendre le tuto Jobette (Symfony 1.4) et l'intégrer dans Symfony 2.3 à l'aide d'un tuto prévu pour Symfony 2.0...
+Que du bonheur ??
