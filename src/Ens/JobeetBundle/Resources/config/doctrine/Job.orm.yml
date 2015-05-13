@@ -60,5 +60,8 @@ Ens\JobeetBundle\Entity\Job:
                 name: category_id
                 referencedColumnName: id
     lifecycleCallbacks:
-        prePersist: [ setCreatedAtValue, setExpiresAtValue ]
+        prePersist: [ setTokenValue, preUpload, setCreatedAtValue, setExpiresAtValue ]
         preUpdate: [ setUpdatedAtValue ]
+        postPersist: [ upload ]
+        postUpdate: [ upload ]
+        postRemove: [ removeUpload ]
